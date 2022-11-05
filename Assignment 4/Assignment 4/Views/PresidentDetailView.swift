@@ -2,8 +2,7 @@
 //  PresidentDetailView.swift
 //  Assignment 4
 //
-//  Created by user225222 on 11/4/22.
-//
+//  Created by Destin Sulejmani //
 
 import SwiftUI
 
@@ -11,18 +10,19 @@ struct PresidentDetailView: View {
     
     var president: PresidentViewModel
     
+    // Formatter to convert presidents number to ordianl
     var numberFormat: String {
         let formatter = NumberFormatter()
         formatter.numberStyle = .ordinal
         
-        let presidentNumber = Double(president.number)
         
-        return formatter.string(from: NSNumber(value: presidentNumber!))!
-        
+        return formatter.string(from: NSNumber(value: president.number)) ?? ""
             }
    
     
     var body: some View {
+        
+        // Formatting to show presidents custom page
         VStack(spacing: 16) {
             Text(president.name)
                 .padding()

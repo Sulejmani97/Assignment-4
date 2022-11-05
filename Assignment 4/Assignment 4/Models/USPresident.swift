@@ -7,9 +7,10 @@
 
 import Foundation
 
+// decode struct for property list
 struct USPresident: Decodable {
     var name: String
-    var number: String
+    var number: Int
     var startDate: String
     var endDate: String
     var nickName: String

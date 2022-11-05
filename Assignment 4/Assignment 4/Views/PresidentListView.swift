@@ -1,8 +1,8 @@
 //
-//  ContentView.swift
+//  PresidentListView
 //  Assignment 4
 //
-//  Created by user225222 on 11/3/22.
+//  Created by Destin Sulejmani
 //
 
 import SwiftUI
@@ -14,11 +14,16 @@ struct PresidentListView: View {
     
     var body: some View {
         NavigationStack {
+            
+            // Lists all the presidents in alphabetical order
             List {
                 ForEach(PresidentListVM
                     .presidents, id: \.name) {
                         presidentVM in
-                        PresidentCell(president: presidentVM)                        }
+                        NavigationLink(destination: PresidentDetailView(president: presidentVM)) {
+                            PresidentCell(president: presidentVM)
+                        }
+                    }
             }
             .listStyle(.plain)
             .navigationTitle("Presidents")

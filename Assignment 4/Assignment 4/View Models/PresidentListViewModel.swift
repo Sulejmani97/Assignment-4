@@ -11,6 +11,8 @@ class PresidentListViewModel: ObservableObject {
     
     @Published var presidents: [PresidentViewModel] = []
     
+    
+    // func to load the property list
     func loadPropertyList() {
         guard let path = Bundle.main.path(forResource: "presidents",
         ofType: "plist"), let xml =
@@ -21,6 +23,7 @@ class PresidentListViewModel: ObservableObject {
         do {
             var presidents = try PropertyListDecoder().decode([USPresident].self, from: xml)
             
+            // Sorts the presidents in alphabetic order
             presidents.sort {
                 $0.name < $1.name
             }
