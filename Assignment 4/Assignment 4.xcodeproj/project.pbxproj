@@ -15,6 +15,7 @@
 		CE9082922914A10E00DA3F3B /* PresidentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9082912914A10E00DA3F3B /* PresidentListViewModel.swift */; };
 		CE9082942914A23400DA3F3B /* PresidentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9082932914A23400DA3F3B /* PresidentViewModel.swift */; };
 		CE9082962914B30D00DA3F3B /* presidents.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE9082952914B30D00DA3F3B /* presidents.plist */; };
+		CEE058382915EC4B004F5BAB /* PresidentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE058372915EC4B004F5BAB /* PresidentCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		CE9082912914A10E00DA3F3B /* PresidentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresidentListViewModel.swift; sourceTree = "<group>"; };
 		CE9082932914A23400DA3F3B /* PresidentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresidentViewModel.swift; sourceTree = "<group>"; };
 		CE9082952914B30D00DA3F3B /* presidents.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = presidents.plist; sourceTree = "<group>"; };
+		CEE058372915EC4B004F5BAB /* PresidentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresidentCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				CE9082802914956B00DA3F3B /* PresidentListView.swift */,
+				CEE058372915EC4B004F5BAB /* PresidentCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE058382915EC4B004F5BAB /* PresidentCell.swift in Sources */,
 				CE9082812914956B00DA3F3B /* PresidentListView.swift in Sources */,
 				CE90828D29149D5600DA3F3B /* USPresident.swift in Sources */,
 				CE9082942914A23400DA3F3B /* PresidentViewModel.swift in Sources */,

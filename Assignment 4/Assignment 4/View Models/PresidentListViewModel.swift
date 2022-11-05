@@ -21,6 +21,10 @@ class PresidentListViewModel: ObservableObject {
         do {
             var presidents = try PropertyListDecoder().decode([USPresident].self, from: xml)
             
+            presidents.sort {
+                $0.name < $1.name
+            }
+            
             self.presidents = presidents.map(PresidentViewModel.init)
             
         } catch {

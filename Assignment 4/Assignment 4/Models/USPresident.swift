@@ -8,12 +8,12 @@
 import Foundation
 
 struct USPresident: Decodable {
-    var name = ""
-    var number = ""
-    var startDate = ""
-    var endDate = ""
-    var nickName = ""
-    var politicalParty = ""
+    var name: String
+    var number: Int32
+    var startDate: String
+    var endDate: String
+    var nickName: String
+    var politicalParty: String
     
     private enum CodingKeys: String, CodingKey {
         case name = "Name"

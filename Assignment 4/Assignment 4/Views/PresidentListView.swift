@@ -18,8 +18,7 @@ struct PresidentListView: View {
                 ForEach(PresidentListVM
                     .presidents, id: \.name) {
                         presidentVM in
-                        Text(presidentVM.name)
-                        }
+                        PresidentCell(president: presidentVM)                        }
             }
             .listStyle(.plain)
             .navigationTitle("Presidents")
